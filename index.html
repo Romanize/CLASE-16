@@ -47,14 +47,16 @@
         </nav>
     </header> 
 
-    <div class="container">
-        
     <!-- BANNER PRINCIPAL -->
-        <main class="mainIndex">
+    <main class="mainIndex container-fluid">
+        <div class="container">
             <h1 class="title">Te brindamos herramientas interactivas para estar en contacto con tu audiencia en tus clases, meetings y conferencias.</h1>
             <button>Información</button> 
             <button>Cotización</button> 
-        </main>
+        </div>
+    </main>
+
+    <div class="container">
 
     <!-- CAROUSEL DE COMPAÑIAS -->
         <section class="companyIndex">
@@ -94,18 +96,23 @@
                         <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/07/microsoft-teams-2010669.jpg?itok=Tzz-TC6I" alt="Foto de Interfaz de Microsoft Teams">
                         <p>Durante los últimos meses, Zoom se volvió parte del día a día y se volvió referencia cuando se habla de reuniones de trabajo, tomar clases o casi cualquier actividad que requiera reunirse a la distancia. Sin embargo, Microsoft quiere plantarle frente a la empresa china con Teams , para llevarse la preferencia de mucho, pues aumentó su tamaño de participantes a 300 personas con licencia gratuita.</p>
                         <p>Teams es una aplicación disponible para teléfonos móviles o de escritorio donde se pueden hacer conferencias por videollamada gratis todo el día, y seguramente se llevará la preferencia de algunos usuarios no sólo de Zoom, sino de otras plataformas como Meat, con las que también compite.</p>
-                        <p>A pesar de ser una empresa con enfoque de equipos de trabajo, el servicio gratuito tiene algunas buenas prestaciones: reuniones ilimitadas con duración de hasta 24 horas, hasta 300 participantes en línea, chats y otras funciones para trabajar, como una nube con 10 GB de almacenamiento compartido 2 GB personales.</p>
-                        <p>Asimismo, no necesitarás tener una cuenta de Microsoft para conectarte, simplemente iniciar desde el explorador para entrar con un invitado y reunirte con tus compañeros, amigos o familia.</p>
-                        <p>Para descargarlo de forma gratuita, puedes hacerlo desde Google Play si tu sistema operativo es Android, desde la App Store en iPhones y iPads y desde la Microsoft Store para Windows; sin embargo, también lo puedes abrir desde un explorador, como Chrome o Firefox.</p>
+                        <div id="ver-mas-1" class="collapse">
+                            <p>A pesar de ser una empresa con enfoque de equipos de trabajo, el servicio gratuito tiene algunas buenas prestaciones: reuniones ilimitadas con duración de hasta 24 horas, hasta 300 participantes en línea, chats y otras funciones para trabajar, como una nube con 10 GB de almacenamiento compartido 2 GB personales.</p>
+                            <p>Asimismo, no necesitarás tener una cuenta de Microsoft para conectarte, simplemente iniciar desde el explorador para entrar con un invitado y reunirte con tus compañeros, amigos o familia.</p>
+                            <p>Para descargarlo de forma gratuita, puedes hacerlo desde Google Play si tu sistema operativo es Android, desde la App Store en iPhones y iPads y desde la Microsoft Store para Windows; sin embargo, también lo puedes abrir desde un explorador, como Chrome o Firefox.</p>
+                        </div>
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#ver-mas-1" aria-expanded="false" aria-controls="collapse"></button>
                     </article>
                     <article>
                         <h2>Nueva herramienta en la Pandemia: Google Classroom</h2>
                         <img src="https://saposyprincesas.elmundo.es/wp-content/uploads/2019/04/classroompc.jpg" alt="">
                         <p>Con la llegada de la Pandemia y las escuelas virtuales, comenzaron a utilizarse plataformas como Google Classroom y es que su mismo nombre nos indica de qué va esta herramienta. Se trata de un aula de clases virtuales en la que docentes y alumnos pueden gestionar todo lo relacionado a las actividades escolares.</p>
                         <p>Iniciar sesión en Google Classroom es muy sencillo, esta plataforma te permite, desde colgar vídeos explicativos, asignar deberes escolares, recibir por parte de cada alumno las diferentes asignaciones realizadas para su revisión; para ello pueden echar mano de fotos y vídeos que puedan comprobar la realización de la actividad.</p>
-                        <p>Al ingresar a la plataforma, cada participante podrá ver el contenido que ha sido colocado para la explicación de las actividades y también puede ver las tareas asignadas. Al subir su respuesta, será colocado en una porción de su almacenamiento de Google Drive y el profesor o maestro podrá revisarlo para calificar de esta misma manera.</p>
+                        <div id="ver-mas-2" class="collapse"><p>Al ingresar a la plataforma, cada participante podrá ver el contenido que ha sido colocado para la explicación de las actividades y también puede ver las tareas asignadas. Al subir su respuesta, será colocado en una porción de su almacenamiento de Google Drive y el profesor o maestro podrá revisarlo para calificar de esta misma manera.</p>
                         <p>El Google Classroom no cuenta con videollamadas incorporadas y quizás tiene que ver con el hecho de que el gigante de Mountain View tiene su propia plataforma para ello: Google Meet, pero son muy populares para estas conexiones de clases online otras herramientas como Zoom y hasta las videollamadas grupales de WhatsApp.</p>
                         <p>Todos los estudiantes también pueden interactuar entre ellos, no solamente se pueden comunicar con el educador, sino que los participantes pueden compartir recursos, abrir conversaciones y hasta grupos de estudios para preparar trabajos a través de esta plataforma.</p>
+                        </div>
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#ver-mas-2" aria-expanded="false" aria-controls="collapse"></button>
                     </article>
                 </section>
 
@@ -127,7 +134,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <a href="#top"><i class="fas fa-arrow-circle-up top"></i></a>
+        <div class="top">
+            <a href="#top"><i class="fas fa-caret-up fa-10x"></i></a>
+        </div>
         <div class="container-fluid backgroundBlue">
             <div class="container">
                 <div class="row">
@@ -141,24 +150,24 @@
                     </div>
                     <div class="footerContent col-md-7 col-12">
                         <ul>
-                            <li class="title">Servicios</li>
-                            <li>Ejemplo 1</li>
-                            <li>Ejemplo 2</li>
-                            <li>Ejemplo 3</li>
+                            <li class="title"><a href="services.html">Servicios</a></li>
+                            <li><a href="">Ejemplo 1</a></li>
+                            <li><a href="">Ejemplo 2</a></li>
+                            <li><a href="">Ejemplo 3</a></li>
                         </ul>
                         <ul>
-                            <li class="title">Galeria</li>
-                            <li>Reviews</li>
+                            <li class="title"><a href="">Galeria</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
                         </ul>
                         <ul>
-                            <li class="title">Nosotros</li>
-                            <li class="title">Cotizacion</li>
-                            <li class="title">Contacto</li>
+                            <li class="title"><a href="aboutus.html">Nosotros</li>
+                            <li class="title"><a href="">Cotización</a></li>
+                            <li class="title"><a href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="footerContact footerContent col-md-2 col-12">
                         <ul>
-                            <li class=>info23@escuela.com</li>
+                            <li><a href="mailto: info23@escuela.com">info23@escuela.com</a></li>
                             <li>+548685477</li>
                             <li>Cordoba 987. Caba, Argentina</li>
                         </ul>

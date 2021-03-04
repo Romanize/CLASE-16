@@ -59,16 +59,28 @@ nav li a:active{
 .top{
     text-align: right;
     margin-top: 70px;
+    margin-right: 10px;
+    overflow: hidden;
+    
 }
 
 .top a{
     text-decoration: none;
     color: black;
-    font-size: 5rem;
+    font-size: 0.5rem;
 }
 
-.top a:hover{
-    color:#534bae;
+.top i{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #ffc107;
+    transform: translateY(35px);
+    transition: 0.5s;
+    padding:0px 3px;
+}
+
+.top i:hover{
+    transform: translateY(0px);
 }
 
 .agent{
@@ -95,10 +107,13 @@ nav li a:active{
 .socialMedia{
     max-width: 22px;
     padding: 0 3px;
+    filter: grayscale(100%);
+    transition: 0.3s
 }
 
 .socialMedia:hover{
     transform: scale(1.2);
+    filter: grayscale(0%)
 }
 
 .footerContent {
@@ -108,15 +123,28 @@ nav li a:active{
     justify-content: space-around;
 }
 
+
 .footerContent li{
-    margin-left: 10px;
-    font-size: 1.5rem;
     list-style: none;
 }
 
-.footerContent .title{
+.footerContent li a{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    list-style: none;
+    color:#ff77a9;
+    text-decoration: none;
+}
+
+.footerContent .title a{
     margin: 5px 0 0 0;
-    font-size: 2rem
+    font-size: 2rem;
+    color: #e5eaf5;
+    text-decoration: none;
+}
+
+.footerContent li a:Hover{
+    color:#ffc107;
 }
 
 .footerContact {
@@ -126,7 +154,19 @@ nav li a:active{
 }
 
 .footerContact li{
-    font-size: 1rem;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+.footerContact li a{
+    font-size: 1.5rem;
+    list-style: none;
+    color: #e5eaf5;
+}
+
+.footerContact li a:hover{
+    text-decoration: ffc107;
+    color:#ffc107;
 }
 
 .contactMap{
@@ -172,23 +212,32 @@ nav li a:active{
 }
 
 .mainIndex h1{
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     font-weight: bold;
     padding:10px;
     padding-bottom: 0px;
-    width: 70%;
+    width: 90%;
+    text-shadow: 3px 3px 2px black;
 }
 
 .mainIndex button{
     font-size: 2rem;
-    margin: 0 5px 5px 5px;
-    border-radius: 5px;
-    padding: 3px;
+    margin: 20px 5px 5px 5px;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #4eb5f1;
+    color: #ffff;
+
 }
 
 .mainIndex button:hover{
     background-color:#ff77a9;
+    color: black;
 }
 
 .companyIndex{
@@ -262,6 +311,36 @@ nav li a:active{
     margin: 10px auto;
 }
 
+.newsIndex article button {
+    margin-bottom: 10px;
+    background-color: #ff77a9;
+}
+
+.newsIndex article button {
+    margin-bottom: 10px;
+    background-color: #4eb5f1;
+}
+
+.newsIndex article button:hover {
+    margin-bottom: 10px;
+    background-color:#ff77a9;
+}
+
+
+.newsIndex article button.btn.collapsed:before {
+    content: 'Ver Más';
+    display: block;
+    width: 70px;
+    font-size: 1.5rem;
+}
+
+.newsIndex article button.btn:before {
+    content: 'Ver Menos';
+    display: block;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
 .asideIndex {
     margin-top: 10px;
     height: max-content;
@@ -283,6 +362,7 @@ nav li a:active{
     color: whitesmoke;
     font-size: 2rem;
     padding-left: 5px;
+    transition: 0.3s;
 }
 
 .asideIndex a:before{
@@ -291,13 +371,15 @@ nav li a:active{
 }
 
 .asideIndex a:hover{
-    color:#ff77a9;
+    color:#ffc107;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+
 }
 
 .asideIndex p{
     font-size: 1.5rem;
     padding-left: 20px;
-    color: black;
+    color: #ff77a9;
 }
 
 /* Services */
@@ -332,19 +414,76 @@ nav li a:active{
 
 /* About Us */
 
-/* .mainAboutUs {
-    margin: 10px 0px;
-}
+.zona1 {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: linear-gradient(to top, #e5eaf5, whitesmoke);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray; }
 
-.mainAboutUs h1{
-    font-size: 4rem;
-    font-style: italic;
-}
+.zona1__h1, .zona1__h2 {
+    font-size: 4em; }
 
-.mainAboutUs h2{
-    font-size: 3rem;
-    font-style: italic;
-} */
+.zona1__h3 {
+    font-size: 3em; }
+
+.zona1 p {
+    font-size: 1.5rem;
+    text-align: left; }
+
+.zona2, .zona3 {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: linear-gradient(to top, #e5eaf5, whitesmoke);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray; }
+    
+.zona2__h1, .zona2__h2 {
+    font-size: 4em; }
+
+.zona2__h3 {
+    font-size: 3em; }
+
+.zona2 p, .zona3 p {
+    font-size: 1.5rem;
+    text-align: left; }
+
+.zona1__teamContainer {
+    text-align: center; }
+
+.zona1__team {
+    width: 100%;
+    border-radius: 30px; }
+
+.zona2, .zona3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center; }
+
+.zona2__foto {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 600px;
+    margin: 5px auto;
+    order: 1; }
+
+.zona2 div, .zona3 div {
+    order: 2; }
+
+.zona3 {
+    text-align: left;
+    margin-bottom: 30px; }
+
+.zona3__foto {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 600px;
+    margin: 5px auto; }
 
 /* Reviews */
 
@@ -492,6 +631,10 @@ font-size: 15px;
 /* Medianos o mas, cambia el grid*/
 @media (min-width: 768px) { 
 
+    .mainIndex h1{
+        font-size: 5rem;
+    }
+
     .asideIndex{
         padding: 10px;
     }
@@ -509,6 +652,25 @@ font-size: 15px;
         text-align: end;
     }
 
+    .zona1__team {
+        width: 60%;
+        margin: 30px; }
+
+    .zona2, .zona3{
+        flex-direction: row;
+        align-content: center;
+        margin: 30px auto; }
+
+    .zona2 div, .zona3 div{
+        order: 0;
+        margin: auto 10px; }
+    
+    .zona3 div {
+        text-align: left;
+    }
+
+    .zona2, .zona3 {
+        text-align: right; } 
 }
 
 /* Pequeños dispositivos, cambian los elementos */
