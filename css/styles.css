@@ -90,7 +90,7 @@ nav li a:active{
     background-size:contain;
     display: none;
     justify-content: center;
-    transform: scale(1.5) translateY(-30px)
+    transform: scale(1.5) translateY(-40px)
 }
 
 .agent div{
@@ -101,14 +101,15 @@ nav li a:active{
 
 .agent p{
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .socialMedia{
     max-width: 22px;
     padding: 0 3px;
     filter: grayscale(100%);
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .socialMedia:hover{
