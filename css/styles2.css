@@ -1,0 +1,75 @@
+.zona1 {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px;
+  background: linear-gradient(to top, #e5eaf5, whitesmoke);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px gray; }
+  .zona1__h1, .zona1__h2 {
+    font-size: 4em; }
+  .zona1__h3 {
+    font-size: 3em; }
+  .zona1 p {
+    font-size: 1.5rem;
+    text-align: left; }
+
+.zona2, .zona3 {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px;
+  background: linear-gradient(to top, #e5eaf5, whitesmoke);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px gray; }
+  .zona2__h1, .zona2__h2 {
+    font-size: 4em; }
+  .zona2__h3 {
+    font-size: 3em; }
+  .zona2 p, .zona3 p {
+    font-size: 1.5rem;
+    text-align: left; }
+
+.zona1__teamContainer {
+  text-align: center; }
+
+.zona1__team {
+  width: 100%;
+  border-radius: 30px; }
+
+.zona2, .zona3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-content: center; }
+  .zona2__foto {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 600px;
+    margin: 5px auto;
+    order: 1; }
+  .zona2 div, .zona3 div {
+    order: 2; }
+
+.zona3 {
+  text-align: left;
+  margin-bottom: 30px; }
+  .zona3__foto {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 600px;
+    margin: 5px auto; }
+
+@media (min-width: 768px) {
+  .zona1__team {
+    width: 60%;
+    margin: 30px; }
+  .zona2, .zona3, .zona3 {
+    flex-direction: row;
+    align-content: center;
+    margin: 30px auto; }
+    .zona2 div, .zona3 div, .zona3 div {
+      order: 0;
+      margin: auto 10px; }
+  .zona2, .zona3 {
+    text-align: right; } }

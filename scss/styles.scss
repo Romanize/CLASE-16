@@ -1,0 +1,87 @@
+//Cambio los colores para que se note la diferencia en el desafio
+$fondo:#FF0000;
+$topMargin: 30px;
+
+@mixin zonas($width, $padding){
+    width: $width;
+    margin: 0px auto;
+    margin-top: $topMargin;
+    background: linear-gradient(to top, #e5eaf5, whitesmoke);
+    border-radius: 30px;
+    padding: $padding;
+    box-shadow: 5px 5px 10px gray;
+}
+
+@for $i from 1 to 3{
+    .zona#{$i}{
+        @include zonas(90%,10px);
+        &__h1, &__h2{
+            font-size: 4em;
+        }
+        &__h3{
+            font-size: 3em;
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: left;
+        }
+    }
+}
+
+.zona1{
+    &__teamContainer{
+        text-align: center;
+    }
+    &__team{
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+
+.zona2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    &__foto {
+        max-width: 200px;
+        height: 200px;
+        border-radius: 600px;
+        margin: 5px auto;
+        order: 1;
+    }
+    div {
+        order: 2;
+    }
+}
+
+.zona3 {
+    @extend .zona2;
+    text-align: left;
+    margin-bottom: 30px;
+    &__foto {
+        max-width: 200px;
+        height: 200px;
+        border-radius: 600px;
+        margin: 5px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .zona1__team{
+        width: 60%;
+        margin: 30px;
+    }
+    .zona2, .zona3{
+        flex-direction: row;
+        align-content: center;
+        margin: $topMargin auto;
+        div {
+            order: 0;
+            margin: auto 10px;
+        }
+    }
+    .zona2{
+        text-align: right;
+    }
+}
