@@ -1,14 +1,14 @@
 /* General */
 
 * {
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.myLogo {
+.my-logo {
     width: 50px;
     border-style: outset;
     border-color: #f5f0e5;
@@ -16,7 +16,7 @@
     border-radius: 10px;
 }
 
-.myLogo:hover {
+.my-logo:hover {
     transform: scale(1.1);
 }
 
@@ -47,12 +47,12 @@ nav li a:active{
     color: #000051
 }
 
-.whatsappLogo {
+.whatsapp-logo {
     font-size: 2em;
     color: #25D366
 }
 
-.whatsappLogo:hover {
+.whatsapp-logo:hover {
     transform: scale(1.2)
 }
 
@@ -74,13 +74,7 @@ nav li a:active{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #ffc107;
-    transform: translateY(35px);
-    transition: 0.5s;
     padding:0px 3px;
-}
-
-.top i:hover{
-    transform: translateY(0px);
 }
 
 .agent{
@@ -105,19 +99,19 @@ nav li a:active{
     font-weight: bold;
 }
 
-.socialMedia{
+.social-media{
     max-width: 22px;
     padding: 0 3px;
     filter: grayscale(100%);
     transition: 0.3s;
 }
 
-.socialMedia:hover{
+.social-media:hover{
     transform: scale(1.2);
     filter: grayscale(0%)
 }
 
-.footerContent {
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     padding: 1%;
@@ -125,11 +119,11 @@ nav li a:active{
 }
 
 
-.footerContent li{
+.footer-content li{
     list-style: none;
 }
 
-.footerContent li a{
+.footer-content li a{
     margin-left: 10px;
     font-size: 1.5rem;
     list-style: none;
@@ -137,40 +131,40 @@ nav li a:active{
     text-decoration: none;
 }
 
-.footerContent .title a{
+.footer-content .title a{
     margin: 5px 0 0 0;
     font-size: 2rem;
     color: #e5eaf5;
     text-decoration: none;
 }
 
-.footerContent li a:Hover{
+.footer-content li a:Hover{
     color:#ffc107;
 }
 
-.footerContact {
+.footer-contact {
     justify-content: center;
     text-align: center;
     color: #ff77a9;
 }
 
-.footerContact li{
+.footer-contact li{
     font-size: 1.3rem;
     list-style: none;
 }
 
-.footerContact li a{
+.footer-contact li a{
     font-size: 1.5rem;
     list-style: none;
     color: #e5eaf5;
 }
 
-.footerContact li a:hover{
+.footer-contact li a:hover{
     text-decoration: ffc107;
     color:#ffc107;
 }
 
-.contactMap{
+.contact-map{
     order: 1;
     margin-bottom: 10px;
 }
@@ -195,7 +189,7 @@ nav li a:active{
     border-width: 2px;
     border-color: #ff77a9;
 }
-.backgroundBlue {
+.background-blue {
     background-color: #1A237E;
 }
 
@@ -205,14 +199,14 @@ nav li a:active{
 
 /* Index */
 
-.mainIndex {
+.main-index {
     background-image: url(https://esunique.com/wp-content/uploads/2017/12/Unique_Tendencias-telecomunicaciones-ahorro-2018-1024x512.jpg);
     background-position: center;
     background-size: cover;
     margin-top: 30px;
 }
 
-.mainIndex h1{
+.main-index h1{
     font-size: 4rem;
     color: white;
     font-weight: bold;
@@ -222,7 +216,7 @@ nav li a:active{
     text-shadow: 3px 3px 2px black;
 }
 
-.mainIndex button{
+.main-index button{
     font-size: 2rem;
     margin: 20px 5px 5px 5px;
     border: solid 1px;
@@ -236,23 +230,23 @@ nav li a:active{
 
 }
 
-.mainIndex button:hover{
+.main-index button:hover{
     background-color:#ff77a9;
     color: black;
 }
 
-.companyIndex{
+.company-index{
     display: none;
     margin: 30px 0;
 }
 
-.companyIndex > p{
+.company-index > p{
     text-align:center;
     font-size: 2rem;
     margin-top: 10px;
 }
 
-.companyImages{
+.company-images{
     display: flex;
     justify-content: space-around;
     filter: grayscale();
@@ -261,19 +255,19 @@ nav li a:active{
     flex-shrink: 0;
 }
 
-.companyImages img{
+.company-images img{
     height: 100px;
     max-width: 170px;
 }
 
-#companyCarousel{
+#company-carousel{
     display: block;
     margin-top: 10px;
     font-size: 2rem;
     text-align: center;
 }
 
-#companyCarousel img {
+#company-carousel img {
     display: inline-block;
     width: auto;
     max-width: 45%;
@@ -283,66 +277,67 @@ nav li a:active{
     margin: 0 auto;
 }
 
-.newsIndex{
+.news-index{
     margin-top: 10px;
     padding: 0 2rem;
 }
 
-.newsIndex article{
+.news-index article{
     text-align: center;
     border-style:groove;
     border-width: 0 0 2px 0;
     border-color: #ff77a9;
     margin: 2rem 0;
+    /* look */
 }
 
-.newsIndex h2{
+.news-index h2{
     font-size: 3rem;
     text-align: left;
     color: #000051
 }
 
-.newsIndex p{
+.news-index p{
     font-size: 2rem;
     text-align: justify;
 }
 
-.newsIndex img{
+.news-index img{
     width: 95%;
     margin: 10px auto;
 }
 
-.newsIndex article button {
+.news-index article button {
     margin-bottom: 10px;
     background-color: #ff77a9;
 }
 
-.newsIndex article button {
+.news-index article button {
     margin-bottom: 10px;
     background-color: #4eb5f1;
 }
 
-.newsIndex article button:hover {
+.news-index article button:hover {
     margin-bottom: 10px;
     background-color:#ff77a9;
 }
 
 
-.newsIndex article button.btn.collapsed:before {
+.news-index article button.btn.collapsed:before {
     content: 'Ver Más';
     display: block;
     width: 70px;
     font-size: 1.5rem;
 }
 
-.newsIndex article button.btn:before {
+.news-index article button.btn:before {
     content: 'Ver Menos';
     display: block;
     width: fit-content;
     font-size: 1.5rem;
 }
 
-.asideIndex {
+.aside-index {
     margin-top: 10px;
     height: max-content;
     top: 0px;
@@ -351,14 +346,14 @@ nav li a:active{
     padding-top:10px;
 }
 
-.asideIndex iframe{
+.aside-index iframe{
     width: 100%;
     height: 250px;
     display: block;
     margin-bottom: 15px;
 }
 
-.asideIndex a{
+.aside-index a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 2rem;
@@ -366,18 +361,18 @@ nav li a:active{
     transition: 0.3s;
 }
 
-.asideIndex a:before{
+.aside-index a:before{
     color:#534bae;
     content:"> ";
 }
 
-.asideIndex a:hover{
+.aside-index a:hover{
     color:#ffc107;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
 
 }
 
-.asideIndex p{
+.aside-index p{
     font-size: 1.5rem;
     padding-left: 20px;
     color: #ff77a9;
@@ -385,7 +380,7 @@ nav li a:active{
 
 /* Services */
 
-.mainServices{
+.main-services{
     margin-top: 30px;
 }
 
@@ -424,11 +419,8 @@ nav li a:active{
     padding: 10px;
     box-shadow: 5px 5px 10px gray; }
 
-.zona1__h1, .zona1__h2 {
+.zona1 h1 {
     font-size: 4em; }
-
-.zona1__h3 {
-    font-size: 3em; }
 
 .zona1 p {
     font-size: 1.5rem;
@@ -443,22 +435,18 @@ nav li a:active{
     padding: 10px;
     box-shadow: 5px 5px 10px gray; }
     
-.zona2__h1, .zona2__h2 {
+.zona2 h2 {
     font-size: 4em; }
 
-.zona2__h3 {
+.zona2 h3 {
     font-size: 3em; }
 
 .zona2 p, .zona3 p {
     font-size: 1.5rem;
     text-align: left; }
 
-.zona1__teamContainer {
+.teamContainer {
     text-align: center; }
-
-.zona1__team {
-    width: 100%;
-    border-radius: 30px; }
 
 .zona2, .zona3 {
     display: flex;
@@ -466,7 +454,7 @@ nav li a:active{
     text-align: left;
     align-content: center; }
 
-.zona2__foto {
+.zona2 img {
     max-width: 200px;
     height: 200px;
     border-radius: 600px;
@@ -480,7 +468,7 @@ nav li a:active{
     text-align: left;
     margin-bottom: 30px; }
 
-.zona3__foto {
+.zona3 img {
     max-width: 200px;
     height: 200px;
     border-radius: 600px;
@@ -526,11 +514,11 @@ nav li a:active{
 
 .gallery img:hover + p{
     display: inline-block;
-    animation-name: GalleryShow;
+    animation-name: Gallery-show;
     animation-duration: 1s;
 }
 
-@keyframes GalleryShow {
+@keyframes Gallery-show {
     0% {height: 0%;}
     25%{height: 25%;}
     50%{height: 50%;}
@@ -538,41 +526,41 @@ nav li a:active{
     100%{height: auto;}
 }
 
-.mainReview .flexReviewL{
+.main-review .flex-review-l{
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
 }
 
-.mainReview .flexReviewR{
+.main-review .flex-review-r{
     display: flex;
     flex-direction: row-reverse;
     text-align: end;
     margin-top:20px
 }
 
-.mainReview img {
+.main-review img {
     width: 80px;
     height: 80px;
     align-self: center;
     border-radius: 30px;
 }
 
-.reviewContent {
+.review-content {
     margin: 5px 10px;
 }
 
-.reviewContent h3 {
+.review-content h3 {
     font-size: 2rem;
     display: inline;
 }
 
-.reviewContent h4 {
+.review-content h4 {
     font-style: italic;
     font-size: 1.5rem;
 }
 
-.reviewBox {
+.review-box {
     background: linear-gradient(to top, #e5eaf5, whitesmoke);
     padding: 5px;
     border-radius: 30px;
@@ -582,15 +570,15 @@ nav li a:active{
 
 /* Contact */
 
-.contactBackground{
-    background-image: url(../images/contactBackground.jpg);
+.contact-background{
+    background-image: url(../images/contact-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 30px 0px 0px 0px;
 }
 
-.mainContact {
+.main-contact {
     margin: 0px auto;
     padding: 30px;
     max-width: 500px;
@@ -621,26 +609,38 @@ nav li a:active{
     justify-content: center;
 }
 
-.formButtons {
+.form-buttons {
 text-align: center;
 margin-top: 15px;
 font-size: 15px;
+}
 
+.contact-error {
+    font-size: 1rem
 }
 
 /* Media Querys */
 /* Medianos o mas, cambia el grid*/
 @media (min-width: 768px) { 
 
-    .mainIndex h1{
+    .main-index h1{
         font-size: 5rem;
     }
 
-    .asideIndex{
+    .top i{
+        transform: translateY(35px);
+        transition: 0.5s;
+    }
+    
+    .top i:hover{
+        transform: translateY(0px);
+    }
+
+    .aside-index{
         padding: 10px;
     }
 
-    .asideIndex iframe{
+    .aside-index iframe{
         height: auto;
     }
 
@@ -648,12 +648,12 @@ font-size: 15px;
         display: flex;
     }
 
-    .footerContact{
+    .footer-contact{
         justify-content: end;
         text-align: end;
     }
 
-    .zona1__team {
+    .zona1 img {
         width: 60%;
         margin: 30px; }
 
@@ -677,11 +677,11 @@ font-size: 15px;
 /* Pequeños dispositivos, cambian los elementos */
 @media (min-width: 576px) {
 
-    .companyIndex{
+    .company-index{
         display: block;
     }
 
-    #companyCarousel{
+    #company-carousel{
         display: none;
     }
 }
