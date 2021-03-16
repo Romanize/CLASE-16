@@ -115,12 +115,16 @@ nav li a:active{
     display: flex;
     flex-wrap: wrap;
     padding: 1%;
-    justify-content: space-around;
+    justify-content: start;
+    flex-direction: column;
+    height: 200px;
+    align-content: space-around;
 }
 
 
 .footer-content li{
     list-style: none;
+    width: max-content;
 }
 
 .footer-content li a{
@@ -129,6 +133,7 @@ nav li a:active{
     list-style: none;
     color:#ff77a9;
     text-decoration: none;
+    width: max-content;
 }
 
 .footer-content .title a{
@@ -146,6 +151,7 @@ nav li a:active{
     justify-content: center;
     text-align: center;
     color: #ff77a9;
+    overflow:visible
 }
 
 .footer-contact li{
@@ -218,7 +224,7 @@ nav li a:active{
 
 .main-index button{
     font-size: 2rem;
-    margin: 20px 5px 5px 5px;
+    margin: 20px 5px 20px 15px;
     border: solid 1px;
     border-radius: 15px;
     padding: 5px 10px;
@@ -343,6 +349,8 @@ nav li a:active{
     margin-bottom:5px;
     background-color: #000051;
     padding-top:10px;
+    padding-bottom: 10px;
+    box-shadow: gray 5px 5px 5px;
 }
 
 .aside-index iframe{
@@ -394,6 +402,10 @@ nav li a:active{
     box-shadow: 5px 5px 10px gray;
 }
 
+.plan:hover {
+    translate: 5px 5px;
+}
+
 .plan-info {
     text-align: left;
     list-style-type: inside;
@@ -413,16 +425,19 @@ nav li a:active{
 }
 
 .precio {
-    font-size: 5rem;
     text-align: center;
     margin-top: 30px;
+}
+
+.precio .valor{
+    font-size: 5rem;
 }
 
 .precio span{
     font-size: 2rem
 }
 
-.popular .precio {
+.popular .precio .valor{
     color:#ffc107
 }
 
@@ -435,7 +450,7 @@ nav li a:active{
 }
 
 .precio div{
-    font-size: 3rem;
+    font-size:3rem;
 }
 
 .contratar {
@@ -673,6 +688,26 @@ margin-top: 15px;
 font-size: 15px;
 }
 
+.form-buttons input[type=submit], 
+.form-buttons input[type=reset] {
+    font-size: 2rem;
+    margin: 20px 5px 20px 15px;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #4eb5f1;
+    color: #ffff;
+}
+
+.form-buttons input[type=submit]:hover,
+.form-buttons input[type=reset]:hover{
+    background-color:#ff77a9;
+    color: black;
+}
+
 .contact-error {
     font-size: 1rem
 }
@@ -698,6 +733,10 @@ font-size: 15px;
         margin-bottom:-20px;
         padding: 20px;
         border-radius: 10px;
+    }
+
+    .popular button{
+        margin-bottom: 20px
     }
 
     .main-index h1{
@@ -727,7 +766,7 @@ font-size: 15px;
 
     .footer-contact{
         justify-content: end;
-        text-align: end;
+        text-align: start;
     }
 
     .zona1 img {
